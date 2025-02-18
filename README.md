@@ -1,18 +1,34 @@
 ## Title of the Project
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+AnomolyDetection-Hydrogen FCEV
+## Data Description
+A set of four Fuel cells (# 5, 6, 7 and 18) were run through 2 different operational profiles
+(charge& discharge) at room temperature. Charging was carried out in a constant current (CC)
+mode at 1.5A until the Fuel cell voltage reached 4.2V and then continued in a constant voltage
+(CV) mode until the charge current dropped to 20mA. Discharge was carried out at a constant
+current (CC) level of 2A until the battery voltage fell to 2.7V, 2.5V, 2.2V and 2.5V for Fuel cell 5 6 7
+and 18 respectively. 
+Repeated charge and discharge cycles result in accelerated aging of the Fuel cell. The
+experiments were stopped when the Fuel cell reached end-of-life (EOL) criteria, which was a 30%
+fade in rated capacity (from 2Ahr to 1.4Ahr).
+This data can be further used for the prediction of both remaining charge (for a given discharge
+cycle) and remaining useful life (RUL).
+Files: 
+1. B0005.mat Data for Fuel cell #5
+2. B0006.mat Data for Fuel cell #6
+3. B0007.mat Data for Fuel cell #7
+4. B0018.mat Data for Fuel cell #18
 
-## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
-
-## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+## Data Dictionary
+- ambient_temperature: ambient temperature (degree C)
+- datetime: the date and time of the start of the cycle, in MATLAB date vector format
+- data: data structure containing the measurements
+- Voltage_measured: Fuel cell terminal voltage (Volts)
+- Current_measured: Fuel cell output current (Amps)
+- Temperature_measured: Fuel cell temperature (degree C)
+- Current_charge: Current measured at load (Amps)
+- Voltage_charge: Voltage measured at load (Volts)
+- Time: Time vector for the cycle (secs)
+- Capacity: Fuel cell capacity (Ahr) for discharge till 2.7V
 
 ## Requirements
 <!--List the requirements of the project as shown below-->
@@ -27,33 +43,44 @@ Tailored Chatbot for Hostel Booking System is a project designed to integrate a 
 ## System Architecture
 <!--Embed the system architecture diagram as shown below-->
 
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+![image](https://github.com/user-attachments/assets/5fd58955-529f-457e-95d0-828130446578)
 
 
 ## Output
 
 <!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+#### Output1 - cycle vs capacity
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+![image](https://github.com/user-attachments/assets/b41f92f0-6e53-45f2-87ba-3573c096201a)
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+#### Output2 -Datetime(when we started the charging of the cycle) vs time (time taken to complete one cycle)
+![image](https://github.com/user-attachments/assets/97378a1c-2fee-4e57-97a7-aad4aacd9fbe)
+### 3. Datetime vs Capacity of fuel cell
+![image](https://github.com/user-attachments/assets/0515530e-2d9b-44dc-916f-cf74c52da599)
+### 4. Time vs Capacity
+![image](https://github.com/user-attachments/assets/73625f8f-827e-46a4-ad5b-2d895506a006)
+### 5. Fuel cell temperature vs time
+![image](https://github.com/user-attachments/assets/2da77a4c-3315-4116-a4ec-f10db03289d6)
 
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
 
 
 ## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+"AnomalyDetection-Hydrogen FCEV" in the available sources. However, I can provide some general insights into anomaly detection in Hydrogen Fuel Cell Electric Vehicles (FCEVs).
 
+Anomaly detection in FCEVs involves monitoring various parameters to identify deviations from normal operation, which could indicate potential issues or failures. Key areas of focus include the fuel cell stack, hydrogen storage system, and overall vehicle performance. For instance, the National Renewable Energy Laboratory (NREL) conducts evaluations of FCEVs to assess fuel cell stack durability, efficiency, vehicle range, fuel economy, and safety. These evaluations help in identifying anomalies and improving the technology. 
+NREL
+
+Additionally, the California Air Resources Board (CARB) publishes annual evaluations on FCEV deployment and hydrogen fuel station network development. These reports provide insights into the current status and progress of FCEVs, which can be useful for understanding common issues and areas requiring improvement. 
+CALIFORNIA AIR RESOURCES BOARD
+
+If you have specific details or context about the "AnomalyDetection-Hydrogen FCEV 8dc743" project or system, please provide more information, and I'll be glad to assist you further.
 This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
 
 ## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+1."Utilising Digital Twins for Smart Maintenance Planning of Fuel Cell in Electric Vehicles": This paper presents a framework that employs digital twins for predictive maintenance of fuel cells in electric vehicles. It focuses on real-time condition monitoring and predicting the remaining useful life of fuel cells to optimize maintenance schedules and enhance reliability. 
+MATEC CONFERENCES
 
+2."Efficient Water-Related Failure Detection in PEM Fuel Cells": This study proposes a method to detect, diagnose, and classify various water failure modes in Proton Exchange Membrane Fuel Cells (PEMFCs) using a ybrid diagnostic approach. The approach combines a fractional order impedance model with artificial neural networks to identify faults effectively.
 
 
 
