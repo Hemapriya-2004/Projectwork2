@@ -1,6 +1,7 @@
-## Title of the Project
-AnomolyDetection-Hydrogen FCEV
-## Data Description
+# Title of the Project
+   ##      Anomoly Detection In Hydrogen Fuel Cell Using Ensemble Learning (SVM,DBSCAN)
+
+# Data Description
 A set of four Fuel cells (# 5, 6, 7 and 18) were run through 2 different operational profiles
 (charge& discharge) at room temperature. Charging was carried out in a constant current (CC)
 mode at 1.5A until the Fuel cell voltage reached 4.2V and then continued in a constant voltage
